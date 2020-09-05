@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Electron Character LCD Emulator</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div id="container" class="flex-container">
+      <div id="head" class="page-header flex-row noselect">
+        <h1>Electron Character LCD Emulator</h1>
+      </div>
+      <div class="flex-row">
+        <canvas id="display"></canvas>
+      </div>
+      <div class="flex-row">
+        <p id="lastData" class="lead noselect"></p>
+      </div>
+      <img id="lcdBox" src="./img/lcd_box.png" class="image" alt="LCD Box" />
+      <img id="switchUp" src="./img/switch_up.png" class="image" alt="Switch Up" />
+      <img id="switchDn" src="./img/switch_dn.png" class="image" alt="Switch Down" />
+      <img id="buttonDn" src="./img/button_dn.png" class="image" alt="Button Down" />
+      <footer class="footer">
+        <div class="container">
+          <span class="text-muted noselect">Copyright (c) 2020 AR2 Labs.</span>
+        </div>
+      </footer>
+    </div>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+    <script src="./dist/vrEmuLcd.js"></script>
+  </body>
+</html>

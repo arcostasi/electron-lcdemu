@@ -1,0 +1,16 @@
+{
+  "name": "lcdemu",
+  "version": "0.1.0",
+  "author": "arcostasi",
+  "license": "MIT",
+  "description": "Electron Character LCD Emulator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "custom-electron-titlebar": "^3.2.4",
+    "electron": "^9.2.1",
+    "electron-reload": "^1.5.0"
+  }
+}
